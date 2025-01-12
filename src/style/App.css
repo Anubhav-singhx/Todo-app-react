@@ -1,0 +1,16 @@
+/* App.css */
+.main-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #555;
+}

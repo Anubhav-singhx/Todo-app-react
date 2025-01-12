@@ -1,0 +1,139 @@
+/* General Reset */
+body, h2, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Container */
+.main-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f4f4f4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading */
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Input Field */
+.todo-input {
+    width: calc(100% - 60px);
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-input:focus {
+    border-color: #646cff;
+    box-shadow: 0 0 5px rgba(100, 108, 255, 0.5);
+    outline: none;
+}
+
+/* Add Button */
+.ass-btn {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    color: white;
+    background: #646cff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ass-btn:hover {
+    background: #535bf2;
+    transform: scale(1.1);
+}
+
+.ass-btn:active {
+    background: #4143d1;
+}
+
+/* Todo List */
+.todo-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.4s ease-out;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #ff4a4a;
+    transform: scale(1.1);
+}
+
+.delete-btn:active {
+    background: #e63939;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .todo-input {
+        width: calc(100% - 40px);
+    }
+
+    .ass-btn {
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+}

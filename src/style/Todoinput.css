@@ -1,0 +1,28 @@
+/* Todoinput.css */
+.todo-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.todo-input:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.ass-btn {
+  padding: 10px 20px;
+  background: #888;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+}
+
+.ass-btn:hover {
+  background: #666;
+}
